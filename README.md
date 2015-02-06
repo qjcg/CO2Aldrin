@@ -1,6 +1,6 @@
 # CO₂ Aldrin
 
-Fizzing and buzzing through every damn language.
+Fizzing and buzzing towards enlightenment.
 
 Pull requests encouraged for:
 
