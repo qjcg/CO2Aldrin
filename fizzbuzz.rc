@@ -1,0 +1,19 @@
+#!/usr/bin/env rc
+
+# Use only commands from plan9port bin directory
+path = $PLAN9/bin
+
+for(i in `{seq 1 100}) {
+	if (test `{echo $i % 15 | bc} -eq 0) {
+		echo 'fizzbuzz'
+	}
+	if not if (test `{echo $i % 3 | bc} -eq 0) {
+		echo 'fizz'
+	}
+	if not if (test `{echo $i % 5 | bc} -eq 0) {
+		echo 'buzz'
+	}
+	if not {
+		echo $i
+	}
+}
