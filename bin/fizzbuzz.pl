@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-for (my $i=0; $i <= 100; $i++) {
+for (my $i=1; $i <= 100; $i++) {
 	if ($i % 15 == 0) {
 		print "fizzbuzz\n";
 	} elsif ($i % 3 == 0) {
