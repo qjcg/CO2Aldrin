@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# NB: the 2>&1 in command substitutions is for capturing stderr where necessary
+# NB: the 2>&1 in command substitutions captures stderr where necessary
 declare -A version
 version[awk]="$(awk --version | head -1)"
 version[bash]="$(bash --version | head -1)"
