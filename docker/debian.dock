@@ -1,0 +1,20 @@
+FROM debian:unstable
+
+ENV \
+PLAN9=/usr/lib/plan9 \
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/plan9/bin
+
+ADD bin /app/bin
+ADD test.sh /app/
+ADD expected.txt /app/
+
+# - 9base includes the rc shell
+# - nodejs-legacy package symlinks "node" to "/usr/bin/nodejs"
+# 	- See https://github.com/joyent/node/issues/4772
+RUN \
+sed -i 's/^\(deb-src\)/#\1/' /etc/apt/sources.list && \
+apt-get update && \
+apt-get install -y 9base fish lua5.2 mksh nodejs nodejs-legacy php5-cli python3-minimal ruby tcl zsh
+
+WORKDIR /app
+CMD /app/test.sh

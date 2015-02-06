@@ -1,0 +1,16 @@
+FROM base/archlinux
+
+ENV \
+PLAN9=/usr/lib/plan9 \
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/plan9/bin
+
+ADD bin /app/bin
+ADD test.sh /app/
+ADD expected.txt /app/
+
+RUN \
+pacman -Sy -dd --noconfirm dart plan9port fish lua mksh nodejs php python3 ruby tcl zsh && \
+paccache -rk0
+
+WORKDIR /app
+CMD /app/test.sh
