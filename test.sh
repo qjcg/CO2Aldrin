@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 expected=expected.txt
+bindir=./bin
 tempdir=$(mktemp -d)
 
-for b in bin/*; do
+for b in $bindir/*; do
 	log=$tempdir/$(basename $b).log
 	$b > $log
 
