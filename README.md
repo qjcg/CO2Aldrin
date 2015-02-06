@@ -7,5 +7,5 @@ Pull requests encouraged for:
 - adding new languages
 - changing code to be more idiomatic
 
-The excellent [HyperPolyglot](http://hyperpolyglot.org/)
+The excellent [Hyperpolyglot](http://hyperpolyglot.org/)
 is a handy reference.
