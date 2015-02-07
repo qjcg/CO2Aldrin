@@ -2,7 +2,11 @@
 
 # NB: the 2>&1 in command substitutions captures stderr where necessary
 declare -A version
-version[awk]="$(awk --version | head -1)"
+if [[ -x /usr/bin/gawk ]]; then
+	version[awk]="$(gawk --version | head -1)"
+elif [[ -x /usr/bin/mawk ]]; then
+	version[awk]="$(mawk -W version |& head -1)"
+fi
 version[bash]="$(bash --version | head -1)"
 version[dart]="$(dart --version 2>&1)"
 version[fish]="$(fish --version 2>&1)"
