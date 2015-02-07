@@ -4,6 +4,9 @@ expected=expected.txt
 bindir=./bin
 tempdir=$(mktemp -d)
 
+# later checked via arithmetic evaluation where 0 == false
+all_passing=1
+
 for b in $bindir/*; do
 	log=$tempdir/$(basename $b).log
 	$b > $log
@@ -12,8 +15,10 @@ for b in $bindir/*; do
 		echo "OK:  $log"
 	else
 		echo "ERROR: $log"
+		all_passing=0
 	fi
 done
 
 # remove output dir by default
 [[ $1 == '-k' ]] || rm -rf $tempdir
+(( $all_passing )) || exit 1
