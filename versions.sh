@@ -20,4 +20,4 @@ version[tclsh]="$(tclsh <<< 'puts $tcl_version')"
 
 for lang in ${!version[*]}; do
 	printf "%8s: %s\n" $lang "${version[$lang]}"
-done | sort
+done |& sort
