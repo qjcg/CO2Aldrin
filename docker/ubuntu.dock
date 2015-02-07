@@ -1,8 +1,8 @@
 FROM ubuntu:trusty
 
 ENV \
-PLAN9=/usr/lib/plan9 \
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/plan9/bin
+PLAN9="/usr/lib/plan9" \
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/plan9/bin"
 
 ADD expected.txt test.sh versions.sh /app/
 ADD bin /app/bin/
