@@ -17,6 +17,7 @@ version[php]="$(php --version | head -1)"
 version[python]="$(python3 --version)"
 version[ruby]="$(ruby --version)"
 version[tclsh]="$(tclsh <<< 'puts $tcl_version')"
+version[zsh]="$(zsh --version)"
 
 for lang in ${!version[*]}; do
 	printf "%8s: %s\n" $lang "${version[$lang]}"
