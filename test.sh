@@ -12,9 +12,9 @@ for b in $bindir/*; do
 	$b > $log
 
 	if diff $expected $log &>/dev/null; then
-		echo "OK:  $log"
+		echo "OK:  $b"
 	else
-		echo "ERROR: $log"
+		echo "ERROR: $b"
 		all_passing=0
 	fi
 done
