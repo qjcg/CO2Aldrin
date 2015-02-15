@@ -41,7 +41,7 @@ OK:  ./bin/fizzbuzz.zsh
 ```
 
 
-## Contributing
+## Contribute
 
 Pull requests are encouraged. Please:
 
