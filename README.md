@@ -4,50 +4,49 @@ Fizzing and buzzing along the road to enlightenment.
 
 ## Goals
 
-- 
+- compare syntax and idioms
 
 
 ## Install
 
 The most convenient way to evaluate and experiment with this
-project is to 
+project is via [docker](https://www.docker.com):
 
-`docker pull qjcg/co2aldrin`
-
-To simply get access
-
-`git clone git@github.com:qjcg/CO2Aldrin`
+```
+docker pull qjcg/co2aldrin
+```
 
 
 ## Test
 
-When the docker container is run The CMD directive in the `qjcg/co2aldrin` Dockerfile runs
+When the docker container is run the CMD directive in the `qjcg/co2aldrin` Dockerfile runs
 the test.sh script. 
 
 ```sh
 $ docker run --rm qjcg/co2aldrin
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.awk.log
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.bash.log
-ERROR: /tmp/tmp.y2UiNhauz7/fizzbuzz.dart.log
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.fish.log
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.js.log
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.lua.log
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.php.log
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.pl.log
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.py.log
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.rb.log
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.rc.log
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.tcl.log
-OK:  /tmp/tmp.y2UiNhauz7/fizzbuzz.zsh.log
+OK:  ./bin/fizzbuzz.awk
+OK:  ./bin/fizzbuzz.bash
+/usr/bin/env: dart: No such file or directory
+ERROR: ./bin/fizzbuzz.dart
+OK:  ./bin/fizzbuzz.fish
+OK:  ./bin/fizzbuzz.js
+OK:  ./bin/fizzbuzz.lua
+OK:  ./bin/fizzbuzz.php
+OK:  ./bin/fizzbuzz.pl
+OK:  ./bin/fizzbuzz.py
+OK:  ./bin/fizzbuzz.rb
+OK:  ./bin/fizzbuzz.rc
+OK:  ./bin/fizzbuzz.tcl
+OK:  ./bin/fizzbuzz.zsh
 ```
 
 
 ## Contributing
 
-Pull requests encouraged for:
+Pull requests are encouraged. Please:
 
-- adding new languages
-- changing code to be more idiomatic
+- add new languages
+- rewrite code to be more idiomatic
 
 The excellent [Hyperpolyglot](http://hyperpolyglot.org/)
 is a handy reference.
