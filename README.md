@@ -48,5 +48,8 @@ Pull requests are encouraged. Please:
 - add new languages
 - rewrite code to be more idiomatic
 
-The excellent [Hyperpolyglot](http://hyperpolyglot.org/)
-is a handy reference.
+
+## Useful Resources
+
+- [Hyperpolyglot](http://hyperpolyglot.org/)
+- [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code)
