@@ -7,7 +7,7 @@ main = printAll $ map fizzBuzz [1..100]
        printAll (x:xs) = putStrLn x >> printAll xs
  
 fizzBuzz :: Integer -> String
-fizzBuzz n | n `mod` 15 == 0 = "FizzBuzz"
-           | n `mod` 5  == 0 = "Fizz"
-           | n `mod` 3  == 0 = "Buzz"
+fizzBuzz n | n `mod` 15 == 0 = "fizzbuzz"
+           | n `mod` 5  == 0 = "buzz"
+           | n `mod` 3  == 0 = "fizz"
            | otherwise       = show n
