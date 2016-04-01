@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
+	var output string
 	for i := 1; i <= 100; i++ {
-		var output string
 		switch {
 		case i%15 == 0:
 			output = "fizzbuzz"
