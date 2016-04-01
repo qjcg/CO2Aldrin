@@ -2,42 +2,46 @@
 
 Fizzing and buzzing along the road to enlightenment.
 
-## Goals
+The goal is to compare language syntax and idioms by implementing simple
+functionality in multiple languages.
 
-- compare syntax and idioms
+Building and running code happens in the included `Dockerfile`.
 
 
 ## Install
 
-The most convenient way to evaluate and experiment with this
-project is via [docker](https://www.docker.com):
+The most convenient way to use this code is via [docker](https://www.docker.com).
 
+### Pull image from Docker Registry
+
+```sh
+$ docker pull qjcg/co2aldrin
 ```
-docker pull qjcg/co2aldrin
+
+### Build Locally
+
+`cd` into your copy of this repo, and run:
+
+```sh
+$ docker build -t qjcg/co2aldrin .
 ```
 
 
-## Test
-
-When the docker container is run the CMD directive in the `qjcg/co2aldrin` Dockerfile runs
-the test.sh script. 
+## Use
 
 ```sh
 $ docker run --rm qjcg/co2aldrin
-OK:  ./bin/fizzbuzz.awk
-OK:  ./bin/fizzbuzz.bash
-/usr/bin/env: dart: No such file or directory
-ERROR: ./bin/fizzbuzz.dart
-OK:  ./bin/fizzbuzz.fish
-OK:  ./bin/fizzbuzz.js
-OK:  ./bin/fizzbuzz.lua
-OK:  ./bin/fizzbuzz.php
-OK:  ./bin/fizzbuzz.pl
-OK:  ./bin/fizzbuzz.py
-OK:  ./bin/fizzbuzz.rb
-OK:  ./bin/fizzbuzz.rc
-OK:  ./bin/fizzbuzz.tcl
-OK:  ./bin/fizzbuzz.zsh
+PASSED: /app/bin/fizzbuzz.awk
+PASSED: /app/bin/fizzbuzz.bash
+PASSED: /app/bin/fizzbuzz.fish
+PASSED: /app/bin/fizzbuzz.js
+PASSED: /app/bin/fizzbuzz.lua
+PASSED: /app/bin/fizzbuzz.php
+PASSED: /app/bin/fizzbuzz.pl
+PASSED: /app/bin/fizzbuzz.py
+PASSED: /app/bin/fizzbuzz.rb
+PASSED: /app/bin/fizzbuzz.tcl
+PASSED: /app/bin/fizzbuzz.zsh
 ```
 
 
@@ -49,10 +53,13 @@ Pull requests are encouraged. Please:
 - rewrite code to be more idiomatic
 
 
-## Useful Resources
+## Resources
 
 - [Hyperpolyglot](http://hyperpolyglot.org/)
 - [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code)
+- [Hammer Principle: Programming Languages](http://hammerprinciple.com/therighttool)
+
+
 ## License
 
 MIT
