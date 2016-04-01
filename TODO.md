@@ -1,18 +1,13 @@
-# Languages to add
+# Priorities
 
-
-## Current priorities
-
-### Languages
 - Java
 - Rust
-- Lisp
-
-### Other
+- Lisp / Scheme
 - Print timing / benchmark info via test.sh
 
 
-## Backlog
+
+# Backlog
 
 - OCaml
 - Erlang
