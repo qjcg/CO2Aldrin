@@ -21,13 +21,13 @@ comprehensive resource, but instead is written as a learning exercise.
 ## Install
 
 Either pull the pre-built image from the public [Docker
-registry](https://hub.docker.com/r/qjcg/co2aldrin/), or clone this repo and
+Hub](https://hub.docker.com/r/qjcg/co2aldrin/), or clone this repo and
 build locally.
 
 Alternatively, compilers and/or interpreters can be installed on your host
 machine to run commands directly without `docker`.
 
-### Pull image from Docker Registry
+### Pull image from Docker Hub
 
 ```sh
 $ docker pull qjcg/co2aldrin
