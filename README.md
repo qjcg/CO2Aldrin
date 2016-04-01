@@ -53,3 +53,6 @@ Pull requests are encouraged. Please:
 
 - [Hyperpolyglot](http://hyperpolyglot.org/)
 - [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code)
+## License
+
+MIT
