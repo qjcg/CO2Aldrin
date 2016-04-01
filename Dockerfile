@@ -4,6 +4,7 @@ RUN \
 	apk update && \
 	apk add \
 		bash \
+		bc \
 		fish \
 		lua \
 		mksh \
@@ -23,4 +24,4 @@ RUN \
 ADD app /app/
 ENV PATH="/app/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 WORKDIR /app
-CMD ["/app/test.sh"]
+CMD ["test.sh"]
