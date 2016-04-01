@@ -1,4 +1,6 @@
 #!/usr/bin/env php
+# FizzBuzz in PHP
+
 <?php
 for ( $i = 1; $i <= 100; $i++) {
 	if ( $i % 15 == 0 ) {

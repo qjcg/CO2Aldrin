@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# FizzBuzz in Ruby
 
 (1..100).each do |i|
 	if i % 15 == 0

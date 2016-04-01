@@ -1,4 +1,5 @@
 #!/usr/bin/env lua
+-- FizzBuzz in Lua
 
 for i = 1, 100 do
 	if i % 15 == 0 then

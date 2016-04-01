@@ -1,4 +1,5 @@
 #!/usr/bin/env rc
+# FizzBuzz in rc (plan9 shell)
 
 # Use only plan9 commands
 path = $PLAN9/bin

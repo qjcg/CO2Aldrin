@@ -1,3 +1,4 @@
+-- FizzBuzz in Haskell
 module Main where
  
 main :: IO ()

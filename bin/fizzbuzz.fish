@@ -1,4 +1,5 @@
 #!/usr/bin/env fish
+# FizzBuzz in Fish
 
 for i in (seq 1 100)
 	if test (math "$i % 15") -eq 0
