@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Print version information for interpreters and compilers
 
 declare -A version
 if [[ -x /usr/bin/gawk ]]; then
@@ -8,12 +9,12 @@ elif [[ -x /usr/bin/mawk ]]; then
 fi
 # the 2>&1 captures stderr where necessary
 version[bash]="$(bash --version | head -1)"
-version[dart]="$(dart --version 2>&1)"
 version[fish]="$(fish --version 2>&1)"
+version[gcc]="$(gcc --version | head -1)"
 version[go]="$(go version)"
 version[haskell]="$(ghc --version)"
-version[node]="$(node --version)"
 version[lua]="$(lua -v 2>&1)"
+version[node]="$(node --version)"
 version[php]="$(php --version | head -1)"
 version[python]="$(python3 --version)"
 version[ruby]="$(ruby --version)"
