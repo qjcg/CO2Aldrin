@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM mitchty/alpine-ghc
 
 RUN \
 	apk update && \
@@ -21,7 +21,11 @@ RUN \
 		go \
 		make
 
-ADD app /app/
 ENV PATH="/app/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ADD app /app/
 WORKDIR /app
-CMD ["test.sh"]
+
+# compile commands that need compiling
+RUN make
+
+CMD ["/app/test/test_fizzbuzz.sh"]
