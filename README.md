@@ -1,16 +1,31 @@
 # CO₂ Aldrin
 
-Fizzing and buzzing along the road to enlightenment.
+```
+A crisp fizzing sound,
+followed by a cool buzz, as
+the dark becomes light!
+```
 
-The goal is to compare language syntax and idioms by implementing simple
-functionality in multiple languages.
+A small polyglot programming project.
 
-Building and running code happens in the included `Dockerfile`.
+Consists of:
+
+- code implementing simple tasks in a variety of languages
+- a `Dockerfile` for building and running the code
+
+Draws inspiration from the most excellent [Rosetta Code] and [HyperPolyglot]
+projects. Unlike in those projects, code included here is not meant to be a
+comprehensive resource, but instead is written as a learning exercise.
 
 
 ## Install
 
-The most convenient way to use this code is via [docker](https://www.docker.com).
+Either pull the pre-built image from the public [Docker
+registry](https://hub.docker.com/r/qjcg/co2aldrin/), or clone this repo and
+build locally.
+
+Alternatively, compilers and/or interpreters can be installed on your host
+machine to run commands directly without `docker`.
 
 ### Pull image from Docker Registry
 
@@ -29,6 +44,9 @@ $ docker build -t qjcg/co2aldrin .
 
 ## Use
 
+By default, running the docker image will print the result of testing all
+commands:
+
 ```sh
 $ docker run --rm qjcg/co2aldrin
 PASSED: /app/bin/fizzbuzz.awk
@@ -44,22 +62,44 @@ PASSED: /app/bin/fizzbuzz.tcl
 PASSED: /app/bin/fizzbuzz.zsh
 ```
 
+To print version information:
+
+```sh
+$ docker run --rm qjcg/co2aldrin versions
+      go: go version go1.5.3 linux/amd64
+     gcc: gcc (Alpine 5.3.0) 5.3.0
+     lua: Lua 5.1.5  Copyright (C) 1994-2012 Lua.org, PUC-Rio
+     php: PHP 5.6.17 (cli) (built: Jan 24 2016 22:24:02) 
+     zsh: zsh 5.2 (x86_64-alpine-linux-musl)
+    bash: GNU bash, version 4.3.42(1)-release (x86_64-alpine-linux-musl)
+    fish: fish, version 2.2.0
+    node: v4.3.0
+    ruby: ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux-musl]
+   tclsh: 8.6
+  python: Python 3.5.1
+ haskell: The Glorious Glasgow Haskell Compilation System, version 7.10.3
+```
+
 
 ## Contribute
 
-Pull requests are encouraged. Please:
+Pull requests welcome.
 
-- add new languages
-- rewrite code to be more idiomatic
+Changes to make code more idiomatic are of particular interest.
 
 
 ## Resources
 
-- [Hyperpolyglot](http://hyperpolyglot.org/)
-- [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code)
+- [Rosetta Code]
+- [Hyperpolyglot]
 - [Hammer Principle: Programming Languages](http://hammerprinciple.com/therighttool)
 
 
 ## License
 
 MIT
+
+
+
+[Rosetta Code]: http://rosettacode.org/wiki/Rosetta_Code
+[HyperPolyglot]: http://hyperpolyglot.org/
