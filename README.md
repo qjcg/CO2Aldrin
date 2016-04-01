@@ -49,6 +49,10 @@ commands:
 
 ```sh
 $ docker run --rm qjcg/co2aldrin
+PASSED: /app/bin/fizzbuzz-c
+PASSED: /app/bin/fizzbuzz-cpp
+PASSED: /app/bin/fizzbuzz-go
+PASSED: /app/bin/fizzbuzz-haskell
 PASSED: /app/bin/fizzbuzz.awk
 PASSED: /app/bin/fizzbuzz.bash
 PASSED: /app/bin/fizzbuzz.fish
