@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Compare all fizzbuzz command output to expected output
 
-expected=expected.log
-bindir=../bin
+expected=/app/test/expected_fizzbuzz.log
+bindir=/app/bin
 
 # later checked via arithmetic evaluation where 0 == false
 all_passed=1
