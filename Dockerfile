@@ -1,1 +1,1 @@
-docker/ubuntu.dock
+docker/alpine.dock
