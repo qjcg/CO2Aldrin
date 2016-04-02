@@ -4,6 +4,7 @@ RUN \
 	apk update && \
 	apk add \
 		bash \
+		# fish shell needs bc for math
 		bc \
 		fish \
 		lua \
