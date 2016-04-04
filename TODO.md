@@ -1,5 +1,6 @@
 # Priorities
 
+- x86 assembly
 - Java
 - Rust
 - Lisp / Scheme
