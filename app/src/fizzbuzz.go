@@ -1,4 +1,4 @@
-// FizzBuzz in Go
+// FizzBuzz in Go.
 package main
 
 import "fmt"

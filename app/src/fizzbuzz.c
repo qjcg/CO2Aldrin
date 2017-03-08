@@ -1,4 +1,4 @@
-/* FizzBuzz in C */
+/* FizzBuzz in C. */
 #include <stdio.h>
 
 int main() {
