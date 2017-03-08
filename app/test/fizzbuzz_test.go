@@ -21,6 +21,8 @@ func TestFizzBuzz(t *testing.T) {
 	t.Run("Rust", getSubtestFunc("fizzbuzz-rust", expected))
 }
 
+// TODO: Add benchmarks.
+
 func getSubtestFunc(binary string, expected []byte) func(*testing.T) {
 	return func(t *testing.T) {
 		cmd := exec.Command(binDir + "/" + binary)
