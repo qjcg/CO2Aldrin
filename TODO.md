@@ -2,7 +2,6 @@
 
 - x86 assembly
 - Java
-- Rust
 - Lisp / Scheme
 - Print timing / benchmark info via test.sh
 
