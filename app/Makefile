@@ -19,6 +19,6 @@ fizzbuzz-rust: ${src}/fizzbuzz.rs
 	rustc -o ${bin}/fizzbuzz-rust ${src}/fizzbuzz.rs
 
 clean:
-	rm ${bin}/fizzbuzz-*
+	rm -f ${bin}/fizzbuzz-*
 
 .PHONY: clean
