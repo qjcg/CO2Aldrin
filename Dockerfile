@@ -1,8 +1,7 @@
 FROM mitchty/alpine-ghc
 
 RUN \
-	apk update && \
-	apk add \
+	apk add --update \
 		bash \
 		# fish shell needs bc for math
 		bc \
@@ -11,7 +10,7 @@ RUN \
 		mksh \
 		nodejs \
 		perl \
-		php \
+		php5 \
 		python3 \
 		ruby \
 		tcl \
