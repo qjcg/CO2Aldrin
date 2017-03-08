@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Print version information for interpreters and compilers
+# Print version information for interpreters and compilers.
 
 declare -A version
 if [[ -x /usr/bin/gawk ]]; then
@@ -18,6 +18,7 @@ version[node]="$(node --version)"
 version[php]="$(php --version | head -1)"
 version[python]="$(python3 --version)"
 version[ruby]="$(ruby --version)"
+version[rust]="$(rustc --version)"
 version[tclsh]="$(tclsh <<< 'puts $tcl_version')"
 version[zsh]="$(zsh --version)"
 
