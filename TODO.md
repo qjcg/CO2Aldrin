@@ -12,7 +12,6 @@
 - OCaml
 - Erlang
 - Julia
-- D
 - Sed?
 - [Chef](http://www.dangermouse.net/esoteric/chef.html)
 - [Ook](http://www.dangermouse.net/esoteric/ook.html)
