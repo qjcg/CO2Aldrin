@@ -1,10 +1,13 @@
 bin = ./bin
 src = ./src
 
-all: fizzbuzz-c fizzbuzz-cpp fizzbuzz-go fizzbuzz-haskell fizzbuzz-rust
+all: fizzbuzz-c fizzbuzz-cpp fizzbuzz-d fizzbuzz-go fizzbuzz-haskell fizzbuzz-rust
 
 fizzbuzz-c: ${src}/fizzbuzz.c
 	gcc -g -static -o ${bin}/fizzbuzz-c ${src}/fizzbuzz.c
+
+fizzbuzz-d: ${src}/fizzbuzz.d
+	dmd -of${bin}/fizzbuzz-d ${src}/fizzbuzz.d
 
 fizzbuzz-cpp: ${src}/fizzbuzz.cpp
 	g++ -static -o ${bin}/fizzbuzz-cpp ${src}/fizzbuzz.cpp
